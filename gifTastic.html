@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic </title>
+
+  <!--font link-->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <!-- Bootsrap link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style type="text/css">
+    
+    body{
+      background-image: url("doggy.png");
+    }
+    #doggyButton{
+      margin-top: 10px;
+    }
+    h1{
+      text-align: center;
+      font-family: 'Pacifico', cursive;
+      font-size: 76px;
+    }
+    #allTheBttns{
+      margin-bottom: 20px;
+    }
+    .header {
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+    }
+    
+
+  </style>
+
+</head>
+
+<body> 
+  <div class="header">
+    <h1>Doggy Gif Finder</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class ="col-md-12" id="allTheBttns">
+        <!--Rendered buttons will be assigned here -->
+        <div id="gifBttns"></div>
+      </div>
+    </div>
+
+    <!-- Gifs will get assigned here-->
+    <div class="row">
+      <div class ="col-md-8">
+        <div id="gifImages" data-state="still"></div>
+      </div>
+    
+      <div class ="col-md-4">
+    <!--input box for adding new dog-->
+        <form id ="gif-form">
+          
+            <label for="doggyInput">Choose a Dog:</label>
+            <!--text input box-->
+            <input type="text" id ="doggyInput" class="form-control" placeholder ="doggy name">
+          
+          <!--submit button triggering new dog to be added-->
+          <button id="doggyButton" type="submit" class="btn btn-primary" value="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!--jquery link-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--link js file with html-->
+<script type="text/javascript" src="javascript.js"></script>
+
+  
+</body>
+
+</html>
